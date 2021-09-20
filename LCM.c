@@ -4,7 +4,6 @@ int main()
 {
     int a, b, result;
     int prime[100];
- 
     printf("Enter two numbers: ");
     scanf("%d%d", &a, &b);
     result = lcm(a, b);
@@ -14,7 +13,6 @@ int main()
 int lcm(int a, int b)
 { 
     static int common = 1;
- 
     if (common % a == 0 && common % b == 0)
     {
         return common;
